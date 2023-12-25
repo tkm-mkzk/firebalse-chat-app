@@ -1,9 +1,10 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { AuthGuard } from '@/feature/auth/component/AuthGuard/AuthGuard'
+import { Box, Heading } from '@chakra-ui/react'
 
 export default function Page() {
   return (
-    <Box>
+    <AuthGuard>
       <Heading>Chakra UI</Heading>
-    </Box>
-    )
+    </AuthGuard>
+  )
 }
